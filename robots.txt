@@ -1,0 +1,5 @@
+# This space intentionally left blank
+# If you want to learn about why our robots.txt looks like this, read this post: https://yoa.st/robots-txt
+# If you need a robots.txt file for your site, we recommend using this tool: https://www.internetmarketingninjas.com/seo-tools/robots-txt-generator
+User-agent: *
+Sitemap: https://safethishome.com/sitemap_index.xml

@@ -1,0 +1,21 @@
+{
+	"name": "Safe This Home",
+	"short_name": "STH",
+	"icons": [
+		{
+			"src": "/android-chrome-192x192.png?v=XByvReB89w",
+			"sizes": "192x192",
+			"type": "image/png"
+		},
+		{
+			"src": "/android-chrome-256x256.png?v=XByvReB89w",
+			"sizes": "256x256",
+			"type": "image/png"
+		}
+	],
+	"theme_color": "#3e5b68",
+	"background_color": "#3e5b68",
+	"start_url": "https://safethishome.com",
+	"display": "standalone",
+	"orientation": "portrait"
+}
