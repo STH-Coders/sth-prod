@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>WAF Block</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" integrity="sha512-5fsy+3xG8N/1PV5MIJz9ZsWpkltijBI48gBzQ/Z2eVATePGHOkMIn+xTDHIfTZFVb9GMpflF2wOWItqxAP2oLQ==" crossorigin="anonymous" />
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Biryani&subset=latin:wght@300&display=swap');
+			@import url('http://fonts.googleapis.com/css2?family=Lato&subset=latin:wght@300&display=swap');
+
+			body {
+				color: #121212dc;
+				background-color: #e7e7e7;
+				opacity: 0.92;
+				background-image: linear-gradient(30deg, #f3f3f3 12%, transparent 12.5%, transparent 87%, #f3f3f3 87.5%, #f3f3f3),
+					linear-gradient(150deg, #f3f3f3 12%, transparent 12.5%, transparent 87%, #f3f3f3 87.5%, #f3f3f3),
+					linear-gradient(30deg, #f3f3f3 12%, transparent 12.5%, transparent 87%, #f3f3f3 87.5%, #f3f3f3),
+					linear-gradient(150deg, #f3f3f3 12%, transparent 12.5%, transparent 87%, #f3f3f3 87.5%, #f3f3f3),
+					linear-gradient(60deg, #f3f3f377 25%, transparent 25.5%, transparent 75%, #f3f3f377 75%, #f3f3f377),
+					linear-gradient(60deg, #f3f3f377 25%, transparent 25.5%, transparent 75%, #f3f3f377 75%, #f3f3f377);
+				background-size: 80px 140px;
+				background-position: 0 0,
+					0 0,
+					40px 70px,
+					40px 70px,
+					0 0,
+					41px 70px;
+			}
+
+			main {
+				display: flex;
+				height: 100vh;
+				width: 100vw;
+			}
+
+			div {
+				margin: auto;
+			}
+
+			h1 {
+				font-family: 'Biryani', sans-serif;
+				font-size: 10rem;
+				background: transparent;
+				-webkit-text-fill-color: transparent;
+				-webkit-text-stroke-width: 1.5px;
+				-webkit-text-stroke-color: #121212dc;
+				text-align: center;
+			}
+
+			h2 {
+				font-family: 'Biryani', sans-serif;
+				text-align: center;
+				text-decoration: overline;
+			}
+
+			h5 {
+				font-family: 'Lato', sans-serif;
+				text-align: center;
+			}
+
+			span {
+				font-family: 'Lato', sans-serif;
+				font-size: 1.4rem;
+			}
+
+			p {
+				font-family: 'Lato', sans-serif;
+				font-size: 1.6rem;
+			}
+
+			@media (min-width: 541px) {
+				h1 {
+					font-size: 18rem;
+					-webkit-text-stroke-width: 2px;
+				}
+
+				h2 {
+					font-size: 5.6rem;
+				}
+
+				span {
+					font-size: 1.2rem;
+				}
+
+				p {
+
+					font-size: 1.4rem;
+				}
+			}
+
+			@media (min-width: 813px) {
+				h1 {
+					font-size: 26rem;
+					-webkit-text-stroke-width: 3px;
+				}
+
+				h2 {
+					font-size: 7.2rem;
+				}
+
+				span {
+					font-size: 1rem;
+				}
+
+				p {
+
+					font-size: 1.2rem;
+				}
+
+			}
+
+		</style>
+	</head>
+
+	<main>
+		<div>
+			<h1>STOP!</h1>
+			<h2>ACCESS DENIED</h2>
+			<div class="container">
+				<div class="row">
+					<div class="six columns">
+						<h5>Why have I been blocked?</h5>
+						<p>This website is using a security service to protect itself from online attacks. The action you just performed triggered the security solution. There are several actions that could trigger this block including submitting a certain word or phrase, a SQL command or malformed data.</p>
+					</div>
+					<div class="six columns">
+						<h5>What can I do to resolve this?</h5>
+						<p>You can email the site owner to let them know you were blocked. Please include what you were doing when this page came up and the Cloudflare Ray ID found at the bottom of this page.</p>
+						<div class="container"></div>
+						<div class="row">
+							<div class="six columns">
+								<span>::RAY_ID::</span>
+							</div>
+							<div class="six columns">
+								<span>::CLIENT_IP::</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<body>
+	</body>
+</html>

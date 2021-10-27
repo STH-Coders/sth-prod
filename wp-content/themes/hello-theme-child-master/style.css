@@ -1,0 +1,262 @@
+/*
+Theme Name: Hello Elementor Modified Child
+Theme URI: https://github.com/STH-Coders/sth-prod
+Description: Hello Elementor Modified Child is a child theme of Hello Elementor, created by STHCoders.
+Author: STHCoders Dev Team
+Author URI: https://github.com/STH-Coders
+Template: hello-elementor
+Version: 1.0.1
+Text Domain: hello-elementor-child
+License: GNU General Public License v3 or later.
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
+Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, featured-images, rtl-language-support, threaded-comments, translation-ready
+*/
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+    list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* Document level adjustments */
+html {
+    font-size: 18px;
+}
+
+@media (max-width: 900px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 420px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+/* Link Styling */
+a {
+    color: #f98c19;
+}
+
+a:active,
+a:hover {
+    color: #F9CD9A;
+}
+
+a:visited {
+    color: #C05E00;
+}
+
+/* Modules will scale with document */
+.header {
+    font-size: 1.4rem;
+}
+
+.footer {
+    font-size: 0.75rem;
+}
+
+.sidebar {
+    font-size: 0.85rem;
+}
+
+body {
+    font-family: "Lato",
+        "Proxima Nova",
+        "Helvetica Neue",
+        "Helvetica",
+        "Arial",
+        sans-serif;
+    font-weight: 300;
+    transform: none;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 1rem;
+    line-height: 1.5em;
+    letter-spacing: 1.2;
+}
+
+/* Heading H1-H6 Styling */
+h1 {
+    font-family: "Iceberg",
+        "Garamond",
+        "Times New Roman",
+        Times,
+        serif;
+    color: #EFEFEF;
+    font-weight: 600;
+    transform: lowercase;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 4em;
+    line-height: 1.5em;
+    letter-spacing: 2;
+    margin-top: 1.3em;
+}
+
+h2 {
+    font-family: "Dosis",
+        "Proxima Nova",
+        "Helvetica Neue",
+        "Helvetica",
+        "Arial",
+        sans-serif;
+    color: #EFEFEF;
+    font-weight: 500;
+    transform: uppercase;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 2.4em;
+    line-height: 1.5em;
+    letter-spacing: 1.2em;
+    margin-top: 1.3em;
+}
+
+h3 {
+    font-family: "Dosis",
+        "Proxima Nova",
+        "Helvetica Neue",
+        "Helvetica",
+        "Arial",
+        sans-serif;
+    color: #EFEFEF;
+    font-weight: normal;
+    transform: uppercase;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 2.2em;
+    line-height: 1.5em;
+    letter-spacing: 1.2em;
+    margin-top: 1.3em;
+}
+
+h4 {
+    font-family: "Dosis",
+        "Proxima Nova",
+        "Helvetica Neue",
+        "Helvetica",
+        "Arial",
+        sans-serif;
+    color: #EFEFEF;
+    font-weight: normal;
+    transform: uppercase;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 1.6em;
+    line-height: 1.5em;
+    letter-spacing: 1.2em;
+    margin-top: 1.3em;
+}
+
+h5 {
+    font-family: "Dosis",
+        "Proxima Nova",
+        "Helvetica Neue",
+        "Helvetica",
+        "Arial",
+        sans-serif;
+    color: #EFEFEF;
+    font-weight: normal;
+    transform: uppercase;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 1.4em;
+    line-height: 1.5em;
+    letter-spacing: 1.2em;
+    margin-top: 1.3em;
+}
+
+h6 {
+    font-family: "Exo 2",
+        serif;
+    color: #EFEFEF;
+    font-weight: normal;
+    transform: uppercase;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    letter-spacing: 1.2em;
+    margin-top: 1.3em;
+}
+
+h1:first-child,
+h2:first-child,
+h3:first-child,
+h4:first-child,
+h5:first-child,
+h6:first-child {
+    margin-top: 0
+}
+
+.sitelock {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    height: auto;
+}
