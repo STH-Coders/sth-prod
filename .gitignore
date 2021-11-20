@@ -183,3 +183,6 @@ node_modules/
 
 # Local History for Visual Studio Code
 .history/
+
+osTicket-v1.15.4/
+styles/
