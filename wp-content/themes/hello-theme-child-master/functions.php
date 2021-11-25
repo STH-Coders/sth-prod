@@ -1,20 +1,15 @@
 <?php
 /**
- * Theme functions and definitions
- *
- * @package HelloElementorChild
+ * Theme functions and definitions.
  */
 
-/**
+/*
  * Load child theme css and optional scripts
  *
  * @return void
  */
- 
- function ele_disable_page_title( $return ) {
-   return false;
-}
-add_filter( 'hello_elementor_page_title', 'ele_disable_page_title' );
+
+// Load child theme css and optional scripts.
 
 if (apply_filters('hello_elementor_add_theme_support', $hook_result)) {
     add_theme_support('post-thumbnails');
@@ -38,31 +33,39 @@ if (apply_filters('hello_elementor_add_theme_support', $hook_result)) {
     ]);
 }
 
-add_filter( 'elementor/utils/get_the_archive_title','archive_callback' );
-
-function archive_callback( $title ) {
- $str = 'Here\'s What We Found About: ';
- if ( is_search() ) { 
-   return stripslashes($str) . get_search_query() ; 
- } 
-   return $title; 
+function ele_disable_page_title($return)
+{
+    return false;
 }
+add_filter('hello_elementor_page_title', 'ele_disable_page_title');
 
-if (function_exists("register_sidebar")) {
-  register_sidebar();
+function archive_callback($title)
+{
+    $str = 'Here\'s What We Found About: ';
+    if (is_search()) {
+        return stripslashes($str).get_search_query();
+    }
+
+    return $title;
+}
+add_filter('elementor/utils/get_the_archive_title', 'archive_callback');
+
+if (function_exists('register_sidebar')) {
+    register_sidebar();
 }
 
 // Enable WordPress Custom Fields
 add_filter('acf/settings/remove_wp_meta_box', '__return_false');
 
-function hello_elementor_child_enqueue_scripts() {
-	wp_enqueue_style(
-		'hello-elementor-child-style',
-		get_stylesheet_directory_uri() . '/style.css',
-		[
-			'hello-elementor-theme-style',
-		],
-		'1.0.0'
-	);
+function hello_elementor_child_enqueue_scripts()
+{
+    wp_enqueue_style(
+        'hello-elementor-child-style',
+        get_stylesheet_directory_uri().'/style.css',
+        [
+            'hello-elementor-theme-style',
+        ],
+        '1.0.1'
+    );
 }
-add_action( 'wp_enqueue_scripts', 'hello_elementor_child_enqueue_scripts', 20 );
+add_action('wp_enqueue_scripts', 'hello_elementor_child_enqueue_scripts', 20);
