@@ -71,7 +71,6 @@ inc/
 .precomp
 lib/.precomp
 
-
 ### VirtualEnv ###
 # Virtualenv
 # http://iamzed.com/2009/05/07/a-primer-on-virtualenv/
@@ -149,6 +148,8 @@ pip-selfcheck.json
 *.htaccess
 *wp-settings.php
 *error_log
+*error_log.old
+*permslog
 
 # ignore everything in the root except the "wp-content" directory.
 !wp-content/
