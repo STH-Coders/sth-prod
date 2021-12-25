@@ -1,4 +1,4 @@
 // fiveserver.config.js
 module.exports = {
-	php: '/usr/bin/php',
+	php: '/usr/bin/config/php',
 }
