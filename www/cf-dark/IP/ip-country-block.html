@@ -4,7 +4,7 @@
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>WAF Block</title>
+		<title>403 Forbidden</title>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" integrity="sha512-5fsy+3xG8N/1PV5MIJz9ZsWpkltijBI48gBzQ/Z2eVATePGHOkMIn+xTDHIfTZFVb9GMpflF2wOWItqxAP2oLQ==" crossorigin="anonymous" />
 		<style>
 			@import url('https://fonts.googleapis.com/css2?family=Biryani&subset=latin:wght@300&display=swap');
@@ -30,13 +30,18 @@
 			}
 
 			main {
-				display: flex;
-				height: 100vh;
-				width: 100vw;
+				padding: 2.5em 1.4em;
+				display: -ms-grid;
+				display: grid;
+				place-items: center;
 			}
 
 			div {
 				margin: auto;
+			}
+
+			.row {
+				padding-top: 20px;
 			}
 
 			h1 {
@@ -68,6 +73,7 @@
 			p {
 				font-family: 'Lato', sans-serif;
 				font-size: 1.6rem;
+				text-align: center;
 			}
 
 			@media (min-width: 541px) {
@@ -108,34 +114,30 @@
 
 					font-size: 1.2rem;
 				}
-
 			}
-
 		</style>
 	</head>
 
-	<main>
+	<main class="centered">
 		<div>
-			<h1>STOP!</h1>
-			<h2>ACCESS DENIED</h2>
+			<h1>Sorry!</h1>
+			<h2>CONTENT UNAVAILABLE</h2>
 			<div class="container">
 				<div class="row">
-					<div class="six columns">
-						<h5>Why have I been blocked?</h5>
-						<p>This website is using a security service to protect itself from online attacks. The action you just performed triggered the security solution. There are several actions that could trigger this block including submitting a certain word or phrase, a SQL command or malformed data.</p>
+					<div class="twelve columns">
+						<h5>What happened?</h5>
+						<p>The owner of this website has banned your IP address and/or your geographical location.</p>
 					</div>
-					<div class="six columns">
-						<h5>What can I do to resolve this?</h5>
-						<p>You can email the site owner to let them know you were blocked. Please include what you were doing when this page came up and the Cloudflare Ray ID found at the bottom of this page.</p>
-						<div class="container"></div>
-						<div class="row">
-							<div class="six columns">
-								<span>[RAY ID] ::RAY_ID::</span>
-							</div>
-							<div class="six columns">
-								<span>[CLIENT IP] ::CLIENT_IP::</span>
-							</div>
-						</div>
+				</div>
+				<div class="row">
+					<div class="four columns">
+						<p>CLIENT_IP: [::CLIENT_IP::]</p>
+					</div>
+					<div class="four columns">
+						<p>RAY_ID: [::RAY_ID::]</p>
+					</div>
+					<div class="four columns">
+						<p>GEO_TAG: [::GEO::]</p>
 					</div>
 				</div>
 			</div>

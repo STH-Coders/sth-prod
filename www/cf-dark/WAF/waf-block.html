@@ -4,22 +4,22 @@
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>WAF Block</title>
+		<title>400 Bad Request</title>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" integrity="sha512-5fsy+3xG8N/1PV5MIJz9ZsWpkltijBI48gBzQ/Z2eVATePGHOkMIn+xTDHIfTZFVb9GMpflF2wOWItqxAP2oLQ==" crossorigin="anonymous" />
 		<style>
 			@import url('https://fonts.googleapis.com/css2?family=Biryani&subset=latin:wght@300&display=swap');
 			@import url('http://fonts.googleapis.com/css2?family=Lato&subset=latin:wght@300&display=swap');
 
 			body {
-				color: #121212dc;
-				background-color: #e7e7e7;
+				color: #efefefdc;
+				background-color: #0c0c0c;
 				opacity: 0.92;
-				background-image: linear-gradient(30deg, #f3f3f3 12%, transparent 12.5%, transparent 87%, #f3f3f3 87.5%, #f3f3f3),
-					linear-gradient(150deg, #f3f3f3 12%, transparent 12.5%, transparent 87%, #f3f3f3 87.5%, #f3f3f3),
-					linear-gradient(30deg, #f3f3f3 12%, transparent 12.5%, transparent 87%, #f3f3f3 87.5%, #f3f3f3),
-					linear-gradient(150deg, #f3f3f3 12%, transparent 12.5%, transparent 87%, #f3f3f3 87.5%, #f3f3f3),
-					linear-gradient(60deg, #f3f3f377 25%, transparent 25.5%, transparent 75%, #f3f3f377 75%, #f3f3f377),
-					linear-gradient(60deg, #f3f3f377 25%, transparent 25.5%, transparent 75%, #f3f3f377 75%, #f3f3f377);
+				background-image: linear-gradient(30deg, #040404 12%, transparent 12.5%, transparent 87%, #040404 87.5%, #040404),
+					linear-gradient(150deg, #040404 12%, transparent 12.5%, transparent 87%, #040404 87.5%, #040404),
+					linear-gradient(30deg, #040404 12%, transparent 12.5%, transparent 87%, #040404 87.5%, #040404),
+					linear-gradient(150deg, #040404 12%, transparent 12.5%, transparent 87%, #040404 87.5%, #040404),
+					linear-gradient(60deg, #04040477 25%, transparent 25.5%, transparent 75%, #04040477 75%, #04040477),
+					linear-gradient(60deg, #04040477 25%, transparent 25.5%, transparent 75%, #04040477 75%, #04040477);
 				background-size: 80px 140px;
 				background-position: 0 0,
 					0 0,
@@ -30,9 +30,10 @@
 			}
 
 			main {
-				display: flex;
-				height: 100vh;
-				width: 100vw;
+				padding: 2.5em 1.4em;
+				display: -ms-grid;
+				display: grid;
+				place-items: center;
 			}
 
 			div {
@@ -45,7 +46,7 @@
 				background: transparent;
 				-webkit-text-fill-color: transparent;
 				-webkit-text-stroke-width: 1.5px;
-				-webkit-text-stroke-color: #121212dc;
+				-webkit-text-stroke-color: #efefefdc;
 				text-align: center;
 			}
 
@@ -110,7 +111,6 @@
 				}
 
 			}
-
 		</style>
 	</head>
 
@@ -130,10 +130,10 @@
 						<div class="container"></div>
 						<div class="row">
 							<div class="six columns">
-								<span>[RAY ID] ::RAY_ID::</span>
+								<span>CLIENT_IP: [::CLIENT_IP::]</span>
 							</div>
 							<div class="six columns">
-								<span>[CLIENT IP] ::CLIENT_IP::</span>
+								<span>RAY_ID: [::RAY_ID::]</span>
 							</div>
 						</div>
 					</div>
